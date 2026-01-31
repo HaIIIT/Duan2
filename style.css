@@ -1,21 +1,133 @@
-/*body{
-    background-image: url(./img/backgroud_school.webp);
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-*/
-h2 {
-  color: darkgreen;
-  text-align: center;
+
+/* ================= BODY ================= */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
 }
-h3 {
-  color: darkgreen;
-  text-align: center;
+
+/* ================= HEADER ================= */
+.header {
+  height: 95px;
+  background: rgb(0, 100, 0);
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
-p {
-  text-align: center;
+
+/* LOGO + SLOGAN (BÊN TRÁI) */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
-ul {
-  text-align: center;
+
+.header-left img {
+  width: 70px;
 }
-h4 {
+
+/* SLOGAN */
+.header-slogan {
+  display: flex;
+  flex-direction: column;
+}
+.header-slogan {
+  margin-left: 5px;
+}
+
+.header-slogan p {
+  font-size: 15px;
+  font-style: italic;
+  color: #fff;
+  line-height: 1.3;
+}
+
+/* TÊN TRƯỜNG (GIỮA HEADER) */
+.header-name {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* nút đăng nhập */
+.login-btn {
+  position: absolute;
+  right: 20px;              
+  top: 50%;
+  transform: translateY(-850%); 
+  background: white;
+  color: black !important;
+  padding: 10px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-btn:hover {
+  background: wheat;
+}
+
+/* ================= CONTACT BAR ================= */
+.contact-bar {
+  margin-top: auto;
+  background: rgb(0, 100, 0);
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+}
+
+/* CONTACT TITLE (BÊN TRÁI) */
+.contact-title {
+  width: 140px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+/* CONTACT NAV */
+.contact-nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 2 DÒNG Ở GIỮA */
+.contact-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* 3 LINK Ở DƯỚI */
+.contact-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 8px;
+}
+
+/* LINK */
+.contact-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.contact-nav a:hover {
+  text-decoration: underline;
 }
