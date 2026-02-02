@@ -1,11 +1,10 @@
 <!doctype html>
-<html lang="vn">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Đăng Nhập</title>
-    <link rel="stylesheet" href="login.css" />
-    <script src="login.js"></script>
+    <title>Trang Chủ/Home</title>
+    <link rel="stylesheet" href="home.css" />
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -87,24 +86,19 @@
     />
   </head>
   <body>
-    <script src="login.js"></script>
-    <div class="login-container">
-      <div class="login-box">
-        <img src="img/logo_vlute.png" alt="logo VLUTE" width="40" />
-        <p class="note">Hệ thống quản lý công tác xã hội VLUTE</p>
-        <h2>ĐĂNG NHẬP</h2>
-        <form>
-          <div class="input-group">
-            <input type="text" placeholder="Email Student" required />
-          </div>
-          <div class="input-group">
-            <input type="password" placeholder="Password" required />
-          </div>
-          <button type="button" class="login-btn" onclick="login()">
-            Đăng nhập
-          </button>
-        </form>
+    <div class="header">
+      <div class="menu-btn" id="menuBtn">☰</div>
+      <div class="side-menu" id="sideMenu">
+        <div class="menu-logo">
+          <img src="img/logo_vlute.png">
+        </div>
+        <a href="">Trang chủ</a>
+        <a href="">Phiếu Chấm DRL</a>
+        <a href="">HelpDeck</a>
       </div>
-    </div>
+      <div class="header-title">
+        <p>HỆ THỐNG QUẢN LÝ CÔNG TÁC XÃ HỘI VLUTE</p>
+      </div>
+    <script src="home.js"></script>
   </body>
 </html>

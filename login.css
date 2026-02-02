@@ -1,128 +1,125 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-    margin: 0;
-    height: 100vh;
-    background: url("img/vlute.jpg") center/cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  height: 100vh;
+  background: url("img/vlute.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
-    position: relative;
-    background-image: url(img/vlute.jpg);
-    background-size: cover;
-    background-position: center;
+  position: relative;
+  background-image: url(img/vlute.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 100, 0, 0.7); 
-    }
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 100, 0, 0.7);
+}
 
 .header > * {
-    position: relative; 
+  position: relative;
 }
 
 /* Khung ngoài */
 .login-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .note {
-    margin-top: 15px;
-    font-size: 20px;
-    color: #555;
+  margin-top: 15px;
+  font-size: 20px;
+  color: #555;
 }
 
 /* Box đăng nhập */
 .login-box {
-    background: rgba(255, 255, 255, 0.95);
-    width: 380px;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  background: rgba(255, 255, 255, 0.89);
+  width: 450px;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* Logo */
 .login-logo {
-    width: 80px;
-    margin-bottom: 10px;
+  width: 80px;
+  margin-bottom: 10px;
 }
 
 .login-box h2 {
-    color: darkgreen;
-    margin-bottom: 20px;
+  color: darkgreen;
+  margin-bottom: 20px;
 }
 
 /* Input */
 .input-group input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 14px;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
 }
 
 /* Button */
 button {
-    width: 100%;
-    padding: 12px;
-    background: darkgreen;
-    border: none;
-    color: white;
-    font-size: 16px;
-    border-radius: 6px;
-    cursor: pointer;
+  width: 100%;
+  padding: 12px;
+  background: darkgreen;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 button:hover {
-    
 }
 /* ================= MOBILE (điện thoại) ================= */
 @media (max-width: 768px) {
-
-.header {
+  .header {
     height: auto;
     flex-direction: column;
     align-items: center;
     padding: 15px;
-}
+  }
 
-.header-left {
-    flex-direction: column;     /* logo trên, chữ dưới */
+  .header-left {
+    flex-direction: column; /* logo trên, chữ dưới */
     gap: 10px;
     text-align: center;
-}
+  }
 
-.header-left img {
+  .header-left img {
     width: 60px;
-}
+  }
 
-.header-name {
+  .header-name {
     font-size: 22px;
-}
+  }
 
-.header-slogan p {
+  .header-slogan p {
     font-size: 14px;
-}
+  }
 
-.login-btn {
-    position: static;          /* bỏ absolute */
+  .login-btn {
+    position: static; /* bỏ absolute */
     transform: none;
     margin-top: 10px;
     padding: 6px 18px;
     font-size: 14px;
+  }
 }
-}
-

@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+.header {
+  height: 60px;
+  background: rgb(8, 155, 57);
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.header-title {
+  position: static;   /* BỎ absolute */
+  color: aliceblue;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  flex: 1;
+}
+
+/* NÚT 3 GẠCH */
+.menu-btn {
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* MENU BÊN */
+.side-menu {
+  position: fixed;
+  top: 60px;
+  left: -250px;
+  width: 180px;        /* menu gọn hơn */
+  height: 100%;
+  background: rgba(128, 128, 128, 0.479);
+  padding-top: 20px;  /* bớt padding vì đã có logo */
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+
+/* KHI MỞ */
+.side-menu.active {
+  left: 0;
+}
+
+/* LINK */
+.side-menu a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.side-menu a:hover {
+  background: rgba(194, 9, 9, 0.2);
+}
+
+/* LOGO TRONG MENU */
+.menu-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.menu-logo img {
+  width: 60px;        /* chỉnh nhỏ tại đây */
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* DESKTOP: ẨN MENU MOBILE */
+/* MOBILE */
+.menu-btn {
+  display: block;
+}
+/* DESKTOP */
+@media (min-width: 769px) {
+  
+
+  .nav-desktop {
+    display: flex;
+  }
+}
