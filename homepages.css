@@ -71,9 +71,68 @@ body {
 }
 
 .menu-logo img {
-  width: 60px;        /* chỉnh nhỏ tại đây */
-  height: auto;
+    width: 60px;        /* chỉnh nhỏ tại đây */
+    height: auto;
 }
+/* Người Dùng*/
+.user-wrapper {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+}
+
+/* AVATAR */
+.avatar img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* MENU */
+.user-menu {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  width: 190px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.25);
+  display: none;
+  text-align: center;
+  z-index: 999;
+}
+
+.avatar-big {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user-menu button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+#profileBtn {
+  background: rgb(17, 17, 114);
+  color: white;
+}
+
+#logoutBtn {
+  background: rgb(17, 17, 114);
+  color: white
+}
+
+
+
+
 /* DESKTOP: ẨN MENU MOBILE */
 /* MOBILE */
 .menu-btn {
