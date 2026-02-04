@@ -40,17 +40,17 @@ body {
 .note {
   margin-top: 15px;
   font-size: 20px;
-  color: #555;
+  color: #050505;
 }
 
 /* Box đăng nhập */
 .login-box {
-  background: rgba(255, 255, 255, 0.89);
+  background: rgba(172, 188, 189, 0.767);
   width: 450px;
   padding: 30px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(9, 128, 9, 0.425);
 }
 
 /* Logo */
@@ -60,34 +60,43 @@ body {
 }
 
 .login-box h2 {
-  color: darkgreen;
+  color: rgb(2, 128, 2);
   margin-bottom: 20px;
+  font-weight:600;
 }
 
 /* Input */
 .input-group input {
-  width: 100%;
+  width: 85%;
   padding: 12px;
   margin-bottom: 15px;
   border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 14px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 /* Button */
 button {
-  width: 100%;
+  width: 80%;
   padding: 12px;
   background: darkgreen;
   border: none;
   color: white;
+  font-weight: 500;
   font-size: 16px;
   border-radius: 6px;
   cursor: pointer;
 }
 
-button:hover {
+button:hover{
+  background-color:rgba(27, 120, 226, 0.712) ;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
+
+
 /* ================= MOBILE (điện thoại) ================= */
 @media (max-width: 768px) {
   .header {

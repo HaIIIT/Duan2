@@ -39,6 +39,7 @@ body {
   padding-top: 20px;  /* bớt padding vì đã có logo */
   transition: left 0.3s ease;
   z-index: 1000;
+
 }
 
 
@@ -59,7 +60,13 @@ body {
 }
 
 .side-menu a:hover {
-  background: rgba(194, 9, 9, 0.2);
+  background: rgb(1, 122, 11);
+  border-radius:20px ;
+  flex: 1;
+  text-align: center;
+  font-weight: 600;
+  transform: scale(1.0);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 /* LOGO TRONG MENU */
